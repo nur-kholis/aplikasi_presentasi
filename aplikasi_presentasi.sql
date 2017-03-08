@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 08. Maret 2017 jam 09:05
+-- Waktu pembuatan: 08. Maret 2017 jam 09:20
 -- Versi Server: 5.5.16
 -- Versi PHP: 5.3.8
 
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `aplikasi_presentasi`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `presentasi`
+--
+
+CREATE TABLE IF NOT EXISTS `presentasi` (
+  `id_presentasi` int(11) NOT NULL AUTO_INCREMENT,
+  `judul_presentasi` varchar(50) NOT NULL,
+  `status_presentasi` int(11) NOT NULL,
+  PRIMARY KEY (`id_presentasi`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data untuk tabel `presentasi`
+--
+
+INSERT INTO `presentasi` (`id_presentasi`, `judul_presentasi`, `status_presentasi`) VALUES
+(1, 'null', 0);
 
 -- --------------------------------------------------------
 
